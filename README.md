@@ -14,6 +14,26 @@ my %last_name = qw{
 };
 ```
 
+### Replace Name
+A simple Perl program that makes a modified copy of a text file. In the copy, every string `YourName` (case-insensitive) should be replaced with the second command line parameter. The input file name should be given on the command line as the **first option (don't ask the user!)**, and the output filename should be generated automatically using the corresponding file name with `.modified` at the end.
+
+If a **third option** is given on the command line it should be used as the output filename instead.
+
+Calling the Perl file on the command line like so:
+
+```
+$ ./replaceName.pl document.txt Tommy
+```
+
+Should output a file `document.txt.modified` with all occurrences of `YourName` replaced with `Tommy`
+But calling the command:
+
+```
+$ ./replaceName.pl document.txt Tommy namereplaced.txt
+```
+
+Should output a file `namereplace.txt` with all occurrences of `YourName` replaced with `Tommy`
+
 ### Replace All Names
 A simple Perl program that modifies all of the text files (*.txt) in the current directory the program in running in. This program does the same thing that the `Replace Name` does except that it does it to ALL text files in the current directory.
 In every text file any occurrence of the string `YourName` (case-insensitive) should be replaced with the first command line parameter entered. The output filenames should be generated automatically using the corresponding file name with .out or .modified at the end.
