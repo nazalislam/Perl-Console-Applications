@@ -42,3 +42,6 @@ Calling the Perl file on the command line like so:
 $ ./replaceAllNames.pl Tommy
 ```
 *The above would loop through any file with .txt at the end and save the files out as, for example, "document.txt.out", "document2.txt.out" with all occurrences of "YourName" replaced with "Tommy". It should leave the existing .txt files unedited and save the results to new files.*
+
+### Phonebook
+A simple Perl program that prompts the user for names and phone numbers. The program stores the names as *keys* of a hash and phone-numbers as *values* of associated keys. It keeps storing key-value *(name-phone number)* pair into a hash until the user enters 'print' as a **key**. Once it finds **print** as a key, it prints the contents of *Phonebook* and terminates the program.
